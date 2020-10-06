@@ -5,6 +5,8 @@ This project was coded following a beginner's course to vue 3.0, <a href="https:
 This is just a simple project, built with the intuit of using some of the vue's concepts. I might delve deep into this application later, trying to make something more appealing, and complex, but for now, i'll leave it as it is, though, my project is a bit different from the one built in the course.
 
 
+Live project: https://twooter-online-tutorial.herokuapp.com/
+
 ## Project setup
 ```
 npm install
