@@ -3,7 +3,6 @@
     <section class="userProfile">
 
       <sidebar class="sideContent">
-        
 
         <article class="userPanel">
 
@@ -13,7 +12,7 @@
             <details class="userDetails">
                 <summary>User Details</summary>
                 <strong>Followers: </strong> {{state.followers}}
-                
+               
             </details>
             <em class="adminBadge" v-if="state.user.isAdmin">Admin</em>
 
@@ -58,10 +57,9 @@ export default {
 
   setup(){
     const route = useRoute()
-    const userId = computed(() => route.params.userId)
+    const userId = computed(() => route.params.id)
     
     const state = reactive({
-      followers: 0,
       user: usersJson[userId.value -1] || usersJson[0]
     })
 
@@ -121,5 +119,12 @@ export default {
 .userProfile .twootsWrapper{
     display: flex;
     flex-direction: column;    
+}
+
+@media (max-width: 800px) {
+  .userProfile{
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

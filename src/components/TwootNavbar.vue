@@ -1,6 +1,8 @@
 <template>
     <navbar class="navbar">
-        <h1>Twotter</h1>
+        <router-link to="/">
+            <h1>Twotter</h1>
+        </router-link>
         <span v-if="username">@{{username}}</span>
     </navbar>
 </template>
